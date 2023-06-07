@@ -51,7 +51,7 @@ namespace materialAPI.Controllers
         }
 
 
-        [HttpDelete("{id}")¬
+        [HttpDelete("{id}")]
         public async Task<ActionResult<List<Material>>> DeleteMaterial(int id)
         {
             var result = await _materialService.DeleteMaterial(id);
