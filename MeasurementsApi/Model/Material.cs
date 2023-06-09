@@ -9,7 +9,7 @@
         public string ImageUrl { get; set; }
         public int Quantity { get; set; }
         public string UnitOfMeasurement { get; set; }
-        public double PricePerUnit { get; set; }
+        public int PricePerUnit { get; set; }
 
   
     }

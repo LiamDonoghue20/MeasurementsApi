@@ -22,7 +22,7 @@ namespace MeasurementsApi.Migrations
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
                     UnitOfMeasurement = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PricePerUnit = table.Column<double>(type: "float", nullable: false)
+                    PricePerUnit = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

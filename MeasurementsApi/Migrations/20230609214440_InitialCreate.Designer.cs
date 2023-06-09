@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MeasurementsApi.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230606210358_InitialCreate")]
+    [Migration("20230609214440_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -48,8 +48,8 @@ namespace MeasurementsApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("PricePerUnit")
-                        .HasColumnType("float");
+                    b.Property<int>("PricePerUnit")
+                        .HasColumnType("int");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");

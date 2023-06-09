@@ -32,10 +32,11 @@ namespace materialAPI.Controllers
             return Ok(result);
         }
 
-        [HttpPost]
+        [HttpPost("add-material")]
         public async Task<ActionResult<List<Material>>> AddMaterial(Material material)
         {
             var result = await _materialService.AddMaterial(material);
+
 
 
             return Ok(result);
